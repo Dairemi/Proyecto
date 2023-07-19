@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/web/css/estilos.css">
+</head>
+
+
+<body>
+  <%- include('../vistas/templates/encabezado') %>
+
+  <section class="login">
+    <h2>Iniciar sesión</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="correo@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn-login">Iniciar sesión</button>
+      </div>
+      <h1>¿No tienes cuenta? <a href="/registro"> Regitrate aqui</a></h1>
+    </form>
+  </section>
+
+
+
+
+<%- include('../vistas/templates/pie') %>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+

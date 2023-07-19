@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>El Mercadito de Lele</title>
+  <link rel="stylesheet" href="/web/css/estilos.css">
+
+</head>
+<body>
+  <%- include('../vistas/templates/encabezado') %>
+  
+  <section class="banner">
+    <h1>Bienvenido a El Mercadito de Lele</h1>
+    <p>Explora nuestra amplia selección de productos</p>
+    <a class="cta-button" href="/productos">Ver productos</a>
+  </section>
+  
+  <section class="destacados">
+    <h2>Productos destacados</h2>
+    <div class="product-card">
+      <img src="/web/media/images/produ__01.jpg" alt="Producto 1">
+      
+      <h3>Producto 1</h3>
+      <p>$19.99</p>
+    </div>
+
+
+    <div class="product-card">
+      <img src="/web/media/images/produ__02.jpg" alt="Producto 2">
+      <h3>Producto 2</h3>
+      <p>$29.99</p>
+    </div>
+    <!--  más productos  -->
+  </section>
+  
+  <%- include('../vistas/templates/pie') %>
+</body>
+</html>

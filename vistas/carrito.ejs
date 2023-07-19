@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda en línea - Carrito de compras</title>
+  <link rel="stylesheet" href="/web/css/estilos.css">
+</head>
+<body>
+  <%- include('../vistas/templates/encabezado') %>
+  
+
+  <section class="carrito">
+    <h2>Carrito de compras</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Producto 1</td>
+          <td>$19.99</td>
+          <td>2</td>
+          <td>$39.98</td>
+        </tr>
+        <tr>
+          <td>Producto 2</td>
+          <td>$29.99</td>
+          <td>1</td>
+          <td>$29.99</td>
+        </tr>
+        <!-- Agrega más productos -->
+      </tbody>
+    </table>
+    <div class="subtotal">
+      <p>Subtotal: $69.97</p>
+      <a class="boton-comprar" href="/checkout">Proceder al pago</a>
+    </div>
+  </section>
+
+
+
+  <!-- Lógica para mostrar los productos en el carrito -->
+  
+  <%- include('../vistas/templates/pie') %>
+</body>
+</html>
